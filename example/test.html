@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happ - test</title>
+    <style>
+      .modal {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" class="modalOpen">눌러</button>
+    <div class="modal">
+      <h1>타이틀</h1>
+      <p>내용</p>
+      <button type="button" class="close">닫기</button>
+    </div>
+    <script src="../index.js"></script>
+    <script>
+      const modal = new Happ(".modalOpen");
+      console.log(modal.modalOpen());
+    </script>
+  </body>
+</html>
